@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "It runs fine"
-echo "finallyyyy"
+echo "finally its done"
