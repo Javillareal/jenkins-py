@@ -1,7 +1,3 @@
 #!/bin/bash
-echo "It's about to start"
-mkdir /tmp/ssm
-sudo yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
-sudo systemctl enable amazon-ssm-agent
-sudo systemctl start amazon-ssm-agent
+./mon-put-instance-data.pl --mem-used-incl-cache-buff --mem-util --mem-used --mem-avail
 
