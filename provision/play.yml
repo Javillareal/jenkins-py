@@ -1,0 +1,9 @@
+---
+  -
+    name: Playbook test
+    hosts: node
+    become: yes
+    tasks:
+      -
+        name: Print test
+        command: echo "hablalo coleto"
