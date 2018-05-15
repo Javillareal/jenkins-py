@@ -7,3 +7,6 @@
       -
         name: Print test
         command: echo "hablalo coleto"
+      -
+        name: Create a random folder
+        file: path=~/test/that state=directory
