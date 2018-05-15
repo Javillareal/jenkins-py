@@ -9,4 +9,4 @@
         command: echo "hablalo coleto"
       -
         name: Create a random folder
-        file: path=~/test/that state=directory
+        file: path=~/home/jenkins/test/that state=directory
