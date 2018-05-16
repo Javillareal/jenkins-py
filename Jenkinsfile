@@ -1,9 +1,14 @@
 pipeline {
-    agent { docker { image 'python:3.5.1' } }
+    agent { label "Slave1" }
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
+                ansiblePlaybook(
+                  ansiblePlaybook colorized: true,
+                  credentialsId: 'ansible-jenkins',
+                  inventory: 'provision/inventory.ini',
+                  playbook: 'provision/play.yml'
+                )
             }
         }
     }
