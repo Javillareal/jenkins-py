@@ -1,7 +1,7 @@
 pipeline {
     agent { node { label 'Slave1' } }
     stages {
-        stage('build') {
+        stage('Execute Ansible Script') {
             steps {
                 ansiblePlaybook(
                   credentialsId: 'ansible-jenkins',
